@@ -69,7 +69,7 @@ const Home = () => {
             <li>Express.js</li>
             <li>MongoDB</li>
             <li>React</li>
-            <li>Check Icon Cloud--></li>
+            <li>Check Icon Cloud</li>
             {/* Add more technologies here */}
           </ul>
         </div>

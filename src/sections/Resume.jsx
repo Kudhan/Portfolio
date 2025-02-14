@@ -6,7 +6,7 @@ const Resume = () => {
   return (
     <>
       <section className="bg-slate-800 ">
-        <h1 className="text-secondary text-4xl text-bold justify-center align-top">Contact Me</h1>
+        <h1 className="text-secondary text-4xl text-bold justify-center align-">Contact Me</h1>
         {/* Adding the Dock and DockIcon to your component */}
         <Dock direction="middle">
           <DockIcon>
