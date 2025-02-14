@@ -1,0 +1,93 @@
+/* Ensures the Home section takes up full screen height */
+.home-section {
+    min-height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    padding: 0 1.5rem; /* Horizontal padding */
+  }
+
+  /* Prevent horizontal overflow */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+  
+  .shine-text .highlighted-text {
+    background: linear-gradient(90deg, #ff61a6, #f8b400, #ff61a6); 
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 
+      0 0 12px rgba(255, 97, 166, 0.8), 
+      0 0 24px rgba(255, 97, 166, 0.6),
+      0 0 36px rgba(255, 97, 166, 0.5), 
+      0 0 48px rgba(255, 97, 166, 0.4), 
+      0 0 60px rgba(255, 97, 166, 0.3);
+    animation: shine-name 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes shine-name {
+    0% {
+      text-shadow: 
+        0 0 12px rgba(255, 97, 166, 0.8), 
+        0 0 24px rgba(255, 97, 166, 0.6),
+        0 0 36px rgba(255, 97, 166, 0.5),
+        0 0 48px rgba(255, 97, 166, 0.4),
+        0 0 60px rgba(255, 97, 166, 0.3);
+    }
+    100% {
+      text-shadow: 
+        0 0 20px rgba(255, 97, 166, 1),
+        0 0 40px rgba(255, 97, 166, 0.9), 
+        0 0 60px rgba(255, 97, 166, 0.8),
+        0 0 80px rgba(255, 97, 166, 0.7),
+        0 0 100px rgba(255, 97, 166, 0.6);
+    }
+  }
+  
+  /* Glowing effect for backend */
+  .highlight-backend {
+    background: linear-gradient(90deg, #5e0f97, #bb00cc, #5e0f97); 
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow:
+      0 0 15px rgba(94, 15, 151, 0.8), 
+      0 0 30px rgba(94, 15, 151, 0.7), 
+      0 0 45px rgba(94, 15, 151, 0.6), 
+      0 0 60px rgba(94, 15, 151, 0.5), 
+      0 0 75px rgba(94, 15, 151, 0.4); 
+    font-weight: bold;
+    animation: shine-backend 2.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes shine-backend {
+    0% {
+      text-shadow: 
+        0 0 15px rgba(94, 15, 151, 0.8),
+        0 0 30px rgba(94, 15, 151, 0.7),
+        0 0 45px rgba(94, 15, 151, 0.6),
+        0 0 60px rgba(94, 15, 151, 0.5),
+        0 0 75px rgba(94, 15, 151, 0.4);
+    }
+    100% {
+      text-shadow: 
+        0 0 25px rgba(94, 15, 151, 1),
+        0 0 50px rgba(94, 15, 151, 0.9),
+        0 0 75px rgba(94, 15, 151, 0.8),
+        0 0 100px rgba(94, 15, 151, 0.7),
+        0 0 125px rgba(94, 15, 151, 0.6);
+    }
+  }
+
+  
+  .icon-cloud-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust size as needed */
+  }
+  .icon-cloud {
+    width: 40px;
+    height: 40px;
+  }
+  
