@@ -8,9 +8,9 @@
     "dev": "vite --host",
     "build": "vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite piew"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
