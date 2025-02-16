@@ -16,7 +16,7 @@ export const Card = React.memo(({ card, index, hovered, setHovered }) => (
       <img
         src={card.src}
         alt={card.title || "Card Image"}
-        className="object-cover absolute inset-0 w-full h-full"
+        className="object-cover absolute inset-0 w-full h-full "
       />
     ) : (
       <div className="bg-gray-300 flex items-center justify-center text-primary font-bold text-xl">

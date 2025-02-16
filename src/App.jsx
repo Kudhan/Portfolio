@@ -63,15 +63,13 @@ export default function App() {
       <section className="padding">
         <Project />
       </section>
-      <section className="padding" id="resume-section">
-        <Resume />
-      </section>
       <section className="padding">
         <Contact />
       </section>
-      <section className="padding">
-        <Footer />
+      <section className="padding" id="resume-section">
+        <Resume />
       </section>
+      
 
       {/* Conditionally render the Dock with smooth transition */}
       <Dock
