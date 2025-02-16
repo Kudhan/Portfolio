@@ -3,25 +3,26 @@ import { Dock, DockIcon } from "../components/ui/Dock";
 import { HomeIcon } from "lucide-react"; // lucide-react icons
 
 const Resume = () => {
-  const handleHomeCLick = () =>{
+  const handleHomeCLick = () => {
     window.location.href = '/';
-  } 
+  };
 
-  const handlePhoneClick = () =>{
-      window.location.href = 'tel:+916304400979';
-  }
+  const handlePhoneClick = () => {
+    window.location.href = 'tel:+916304400979';
+  };
 
   const handleMailClick = () => {
     window.location.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=kudhanshaik03@gmail.com';
-  }
-  
-  const handleLinkedInClick = () =>{
-    window.location.href = 'https://www.linkedin.com/in/shaik-kudhan-751412281'
-  }
+  };
 
-  const handleGithubClick = () =>{
-    window.location.href= 'https://github.com/Kudhan';
-  }
+  const handleLinkedInClick = () => {
+    window.location.href = 'https://www.linkedin.com/in/shaik-kudhan-751412281';
+  };
+
+  const handleGithubClick = () => {
+    window.location.href = 'https://github.com/Kudhan';
+  };
+
   return (
     <>
       <section className="bg-slate-800 h-80 flex flex-col justify-between px-8 py-10">
