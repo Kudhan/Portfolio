@@ -43,12 +43,12 @@ const Home = () => {
   return (
     <>
       {/* First section */}
-      <section className="min-h-120 flex justify-center mt-40 relative px-4 sm:px-12 mb-44">
+      <section className="min-h-120 flex justify-center  mt-10 lg:mt-40 relative px-4 sm:px-12 mb-44">
         <div className="text-center text-white relative z-10 max-w-screen-xl mx-auto px-4 sm:px-6">
           <h1 className="text-4xl sm:text-5xl font-bold text-secondary mb-4 ">
             Welcome to My Portfolio
           </h1>
-          <p className="text-lg sm:text-xl max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl max-w-xl mx-auto">
             Hi, <span className="shine-text text-2xl">I'm <span className="highlighted-text">Kudhan</span></span>.
             I'm a passionate Full Stack Web Developer with a focus on <span className="highlight-backend text-2xl">Backend Development.</span>
             I specialize in building scalable and efficient backend solutions that power modern web applications. Let's work together to create seamless, powerful experiences for users, combining front-end design with robust backend logic.

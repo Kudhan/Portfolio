@@ -6,17 +6,20 @@ const projects = [
   {
     title: "Nike Landing Page",
     src: "https://wallpapersok.com/images/thumbnail/nike-brand-just-do-it-6xd77ibze0olg1y6.webp", // Placeholder image URL
-    description: "A React-based Todo List app that allows users to easily add, edit, and delete tasks. It features a clean, interactive interface with real-time updates using React's state management. The app is designed to help users stay organized and manage their daily tasks efficiently in a user-friendly environment.",
+    description: "A React-based Todo List app that allows users to easily add, edit, and delete tasks.",
+    githubLink: "https://github.com/Kudhan", // GitHub link for this project
   },
   {
     title: "Weather Application",
     src: "https://cdn.jim-nielsen.com/ios/1024/weather-2019-02-07.png", // Placeholder image URL
-    description: "A description of Project 2",
+    description: "A weather application built with React.",
+    githubLink: "https://github.com/Kudhan", // GitHub link for this project
   },
   {
     title: "Travel Tracker",
     src: "https://yt3.googleusercontent.com/HJpPNHjYK-op1pfoG-fHplEsWYtZiO96Mm4F_cJRDJ1fN68NZAmoWDmUk3SnCw8uJ7i5bjdIQdk=s900-c-k-c0x00ffffff-no-rj", // Placeholder image URL
-    description: "A description of Project 3",
+    description: "A travel tracker app that helps users track their trips.",
+    githubLink: "https://github.com/Kudhan", // GitHub link for this project
   },
   // Add more projects as needed
 ];
