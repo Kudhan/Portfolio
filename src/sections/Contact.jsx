@@ -1,73 +1,63 @@
-import React from "react";
-import { BentoGrid, BentoGridItem } from "../components/ui/BentoGridDemo"; // Make sure this is the correct path
-import {
-  IconArrowWaveRightUp,
-  IconBoxAlignRightFilled,
-  IconBoxAlignTopLeft,
-  IconClipboardCopy,
-  IconFileBroken,
-  IconSignature,
-  IconTableColumn,
-} from "@tabler/icons-react";
+import { LinkedIn, GitHub, Mail, Phone } from "@mui/icons-material"; // MUI icons
+import { Dock, DockIcon } from "../components/ui/Dock";
+import { HomeIcon } from "lucide-react"; // lucide-react icons
 
-// Define items first to be used in BentoGrid
-const Skeleton = () => (
-  <div
-    className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"
-  >
-  </div>
-);
+const Contact = () => {
+  const handleHomeCLick = () => {
+    window.location.href = '/';
+  };
 
-const items = [
-  {
-    title: "The Nike Landing Page",
-    description: "The Nike landing page features bold visuals, high-quality product images",
-    image: "https://i.pinimg.com/736x/7d/3e/42/7d3e429827adc99ac37ca0bd7fc1653f.jpg", // Replace with your image path
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Weather Application",
-    description: "The weather app landing page displays current weather conditions with dynamic visuals",
-    image: "https://c4.wallpaperflare.com/wallpaper/405/400/980/winter-snow-sun-light-forest-trees-sunset-wallpaper-preview.jpg", // Replace with your image path
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "Travel Tracker",
-    description: "landing page showcases an interactive map,and a visited places",
-    image: "https://w0.peakpx.com/wallpaper/636/414/HD-wallpaper-travel-agency.jpg", // Replace with your image path
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "To-do List",
-    description:
-      "It allows users to add, organize, and prioritize tasks, with options for reminders and task tracking.",
-    image: "https://thumbs.dreamstime.com/b/minimalist-horizontal-banner-featuring-todo-list-coffee-cup-potted-flower-ample-copy-space-generative-ai-illustration-352924410.jpg", // Replace with your image path
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Simon Game",
-    description: "It’s simple, engaging, and challenging.",
-    image: "https://i.ytimg.com/vi/1Yqj76Q4jJ4/maxresdefault.jpg", // Replace with your image path
-    icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
-  },
-];
+  const handlePhoneClick = () => {
+    window.location.href = 'tel:+916304400979';
+  };
 
-export default function Contact() {
+  const handleMailClick = () => {
+    window.location.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=kudhanshaik03@gmail.com';
+  };
+
+  const handleLinkedInClick = () => {
+    window.location.href = 'https://www.linkedin.com/in/shaik-kudhan-751412281';
+  };
+
+  const handleGithubClick = () => {
+    window.location.href = 'https://github.com/Kudhan';
+  };
+
   return (
-    <div className="bg-black mb-10 mt-10"> {/* Added mt-10 here */}
-      <h1 className="text-4xl text-secondary font-bold text-center mt-10 mb-10">My Projects</h1>
-      <BentoGrid className="max-w-4xl mx-auto px-10 py-10">
-        {items.map((item, i) => (
-          <BentoGridItem
-            key={i}
-            title={item.title}
-            description={item.description}
-            image={item.image} // Pass image instead of header
-            icon={item.icon}
-            className={i === 3 || i === 6 ? "md:col-span-2" : ""}
-          />
-        ))}
-      </BentoGrid>
-    </div>
+    <>
+      <section className="bg-slate-800 h-80 flex flex-col justify-between px-8 py-10">
+        {/* Title Section */}
+        <h1 className="text-4xl text-secondary font-bold text-center mb-6 ">Contact Me</h1>
+
+        {/* Button with gradient effect */}
+        <button className="relative w-40 max-w-xs mx-auto mb-5 mt-5">
+          <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+          <div className="px-8 py-2 bg-black rounded-lg relative group transition duration-200 text-white text-center hover:bg-transparent hover:text-white border-2 border-transparent group-hover:border-indigo-500">
+            Resume
+          </div>
+        </button>
+
+        {/* Dock with icons at the bottom (No changes here) */}
+        <Dock direction="middle" className="justify-center mb-10">
+          <DockIcon onClick={handleHomeCLick}>
+            <HomeIcon className="text-white" />
+          </DockIcon>
+          <DockIcon onClick={handlePhoneClick}>
+            <Phone className="text-white" />
+          </DockIcon>
+          <DockIcon onClick={handleMailClick}>
+            <Mail className="text-white" />
+          </DockIcon>
+          <DockIcon onClick={handleLinkedInClick}>
+            <LinkedIn className="text-white" />
+          </DockIcon>
+          <DockIcon onClick={handleGithubClick}>
+            <GitHub className="text-white" />
+          </DockIcon>
+        </Dock>
+      </section>
+    </>
   );
-}
+};
+
+export default Contact;

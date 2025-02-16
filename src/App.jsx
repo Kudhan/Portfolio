@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Nav from "./components/Nav";
-import { Home, About, Project, Resume, Contact, Footer } from "./sections";
+import { Home, About, Project, Contact, Certification, Footer } from "./sections";
 import { Dock, DockIcon } from "./components/ui/Dock";
-import { HomeIcon } from "lucide-react";
+import {  HomeIcon } from "lucide-react";
 import { Phone, LinkedIn, GitHub, Mail } from "@mui/icons-material";
 
 export default function App() {
@@ -61,17 +61,19 @@ export default function App() {
         <About />
       </section>
       <section className="padding">
-        <Project />
+        <Certification />
       </section>
       <section className="padding">
-        <Contact />
+        <Project />
       </section>
       <section className="padding" id="resume-section">
-        <Resume />
+        <Contact />
       </section>
       
 
       {/* Conditionally render the Dock with smooth transition */}
+
+
       <Dock
         direction="middle"
         className={`fixed bottom-10 left-1/2 transform -translate-x-1/2 z-50 transition-opacity duration-500 ease-in-out ${showDock ? "opacity-100" : "opacity-0 pointer-events-none"}`}
