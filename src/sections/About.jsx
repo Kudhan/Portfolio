@@ -46,7 +46,7 @@ const About = () => {
 
   return (
     <section className="about-section relative py-20 bg-gray-800 text-white ">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 mb-90">
         <h2 className="text-4xl font-bold mb-8">About Me</h2>
         <StickyScroll content={content} contentClassName="custom-scroll-effect" />
       </div>

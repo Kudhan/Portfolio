@@ -29,7 +29,7 @@ export default function Project() {
   return (
     <section className="py-16">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-semibold text-secondary dark:text-neutral-100 mb-8">
+        <h2 className="text-3xl md:text-4xl font-semibold text-secondary dark:text-neutral-100 mb-10">
           My Certifications
         </h2>
         <FocusCards cards={projects} />

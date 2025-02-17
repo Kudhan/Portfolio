@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Nav from "./components/Nav";
-import { Home, About, Project, Contact, Certification, Footer } from "./sections";
+import { Home, About, Project, Contact, Certification} from "./sections";
 import { Dock, DockIcon } from "./components/ui/Dock";
 import {  HomeIcon } from "lucide-react";
 import { Phone, LinkedIn, GitHub, Mail } from "@mui/icons-material";
@@ -54,19 +54,19 @@ export default function App() {
   return (
     <main className="relative bg-slate-900">
       <Nav />
-      <section className="xl:padding-l wide:padding-r padding-b">
+      <section className="xl:padding-l wide:padding-r padding-b" id="home">
         <Home />
       </section>
-      <section className="padding">
+      <section className="padding" id="about">
         <About />
       </section>
-      <section className="padding">
+      <section className="padding" id="certification">
         <Certification />
       </section>
-      <section className="padding">
+      <section className="padding" id="project">
         <Project />
       </section>
-      <section className="padding" id="resume-section">
+      <section className="padding" id="contact">
         <Contact />
       </section>
       
