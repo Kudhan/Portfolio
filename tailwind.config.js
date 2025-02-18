@@ -13,6 +13,7 @@ export default {
         'libre': ['"Libre Baskerville"', 'serif'],
         'playfair': ['"Playfair Display"', 'serif'],
         'pacifico': ['"Pacifico"', 'cursive'],
+        'rubik' : ['"Rubik"', 'sans-serif'],
       },
       colors: {
         primary: "#ff8901",  // Added color fix

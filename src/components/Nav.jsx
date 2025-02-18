@@ -12,7 +12,7 @@ const Nav = () => {
       <nav>
         <div className='container flex justify-between items-center py-8'>
           {/* Logo Section */}
-          <div className='text-4xl flex items-center gap-2 py-8 font-bold' id="home">
+          <div className='text-4xl flex items-center gap-2 py-8 font-bold' >
             <DiCisco className='text-4xl text-white' />
             <p className='text-secondary dark:text-primary'>Kudhan</p>
           </div>
