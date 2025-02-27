@@ -10,7 +10,7 @@ const Nav = () => {
   return (
     <>
       <nav>
-        <div className='container flex justify-between items-center py-8'>
+        <div className='container flex justify-between items-center py-6'>
           {/* Logo Section */}
           <div className='text-4xl flex items-center gap-2 py-8 font-bold' >
             <DiCisco className='text-4xl text-white' />
