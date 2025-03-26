@@ -50,8 +50,8 @@ const Home = () => {
           </h1>
           <p className="text-lg sm:text-xl max-w-xl mx-auto">
             Hi, <span className="shine-text text-2xl">I'm <span className="highlighted-text">Kudhan</span></span>.
-            I'm a passionate Full Stack Web Developer with a focus on <span className="highlight-backend text-2xl">Backend Development.</span>
-            I specialize in building scalable and efficient backend solutions that power modern web applications. Let's work together to create seamless, powerful experiences for users, combining front-end design with robust backend logic.
+            I'm a passionate Full Stack Web Developer with a focus on <span className="highlight-backend text-2xl">MERN Development.</span>
+            I specialize in building scalable and efficient solutions that power modern web applications. Let's work together to create seamless, powerful experiences for users, combining front-end design with robust backend logic.
           </p>
         </div>
       </section>

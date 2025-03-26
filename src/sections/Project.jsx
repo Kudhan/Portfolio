@@ -2,10 +2,12 @@ import React from "react";
 import { BentoGrid, BentoGridItem } from "../components/ui/BentoGridDemo"; // Make sure this is the correct path
 import {
   IconArrowWaveRightUp,
-  IconBoxAlignRightFilled,
-  IconBoxAlignTopLeft,
+  IconCompass,
+  IconBuildingWarehouse,
+  IconBrandHipchat,
   IconClipboardCopy,
   IconFileBroken,
+  IconSnowflake,
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
@@ -24,36 +26,35 @@ const items = [
     description: "The Nike landing page features bold visuals, high-quality product images",
     image: "https://i.pinimg.com/736x/7d/3e/42/7d3e429827adc99ac37ca0bd7fc1653f.jpg", // Replace with your image path
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
-    gitLink:"https://github.com/Kudhan/nike_landing_page",
+    gitLink: "https://github.com/Kudhan/nike_landing_page",
   },
   {
     title: "The Weather Application",
     description: "The weather app landing page displays current weather conditions with dynamic visuals",
     image: "https://c4.wallpaperflare.com/wallpaper/405/400/980/winter-snow-sun-light-forest-trees-sunset-wallpaper-preview.jpg", // Replace with your image path
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
-    gitLink:""
+    icon: <IconSnowflake className="h-4 w-4 text-neutral-500" />,
+    gitLink: "https://github.com/Kudhan/Weather_App",
   },
   {
     title: "Travel Tracker",
-    description: "landing page showcases an interactive map,and a visited places",
+    description: "Landing page showcases an interactive map and visited places",
     image: "https://w0.peakpx.com/wallpaper/636/414/HD-wallpaper-travel-agency.jpg", // Replace with your image path
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
-    gitLink:"",
+    icon: <IconCompass className="h-4 w-4 text-neutral-500" />,
+    gitLink: "https://github.com/Kudhan/Travel_Tracker",
   },
   {
-    title: "To-do List",
-    description:
-      "It allows users to add, organize, and prioritize tasks, with options for reminders and task tracking.",
-    image: "https://thumbs.dreamstime.com/b/minimalist-horizontal-banner-featuring-todo-list-coffee-cup-potted-flower-ample-copy-space-generative-ai-illustration-352924410.jpg", // Replace with your image path
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
-    gtiLink:"https://github.com/Kudhan/React-Todo",
+    title: "Melo",
+    description: "Chatting Application. Smooth-Simple-Connected",
+    image: "/melo.png", // Make sure the image path is correct
+    icon: <IconBrandHipchat className="h-4 w-4 text-neutral-500" />,
+    gitLink: "https://github.com/Kudhan/Chat_App", // Corrected typo here from `gtiLink` to `gitLink`
   },
   {
-    title: "The Simon Game",
-    description: "It’s simple, engaging, and challenging.",
-    image: "https://i.ytimg.com/vi/1Yqj76Q4jJ4/maxresdefault.jpg", // Replace with your image path
-    icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
-    gitLink:"https://github.com/Kudhan/simon_game",
+    title: "The Book Inventory Tracker",
+    description: "It’s simple, Inventory Manager",
+    image: "/bit.jpeg", // Replace with your image path
+    icon: <IconBuildingWarehouse className="h-4 w-4 text-neutral-500" />,
+    gitLink: "https://github.com/Kudhan/BookInventoryTracker",
   },
 ];
 
@@ -70,7 +71,7 @@ export default function Certification() {
             image={item.image} // Pass image instead of header
             icon={item.icon}
             gitLink={item.gitLink}
-            className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+            className={i === 3 || i === 6 ? "md:col-span-2" : ""} // Ensure this logic is as you expect
           />
         ))}
       </BentoGrid>

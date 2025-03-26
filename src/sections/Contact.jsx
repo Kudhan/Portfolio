@@ -30,7 +30,7 @@ const Contact = () => {
         <h1 className="text-4xl text-secondary font-bold text-center mb-6 ">Contact Me</h1>
 
         {/* Button with gradient effect */}
-        <button className="relative w-40 max-w-xs mx-auto mb-5 mt-5">
+        <button className="relative w-40 max-w-xs mx-auto mb-5 mt-5" onClick={() => {const link = document.createElement('a');link.href = '/resume.pdf'; link.download = 'resume.pdf'; link.click();}}>
           <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
           <div className="px-8 py-2 bg-black rounded-lg relative group transition duration-200 text-white text-center hover:bg-transparent hover:text-white border-2 border-transparent group-hover:border-indigo-500">
             Resume
