@@ -26,7 +26,7 @@ const items = [
     description: "The Nike landing page features bold visuals, high-quality product images",
     image: "https://i.pinimg.com/736x/7d/3e/42/7d3e429827adc99ac37ca0bd7fc1653f.jpg", // Replace with your image path
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
-    gitLink: "https://github.com/Kudhan/nike_landing_page",
+    gitLink: "https://nike-landing-page-snowy.vercel.app/",
   },
   {
     title: "The Weather Application",
@@ -47,7 +47,7 @@ const items = [
     description: "Chatting Application. Smooth-Simple-Connected",
     image: "/melo.png", // Make sure the image path is correct
     icon: <IconBrandHipchat className="h-4 w-4 text-neutral-500" />,
-    gitLink: "https://github.com/Kudhan/Chat_App", // Corrected typo here from `gtiLink` to `gitLink`
+    gitLink: "https://chat-app-uf8m.onrender.com/", // Corrected typo here from `gtiLink` to `gitLink`
   },
   {
     title: "The Book Inventory Tracker",
