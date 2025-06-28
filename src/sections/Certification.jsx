@@ -4,11 +4,18 @@ import { FocusCards } from "../components/ui/FocusCard"; // Import FocusCards co
 
 // Sample project data
 const projects = [
+
   {
-    title: "Honour In Cyber Security",
-    src: "/honour.jpg", // Placeholder image URL
+    title: "Python Essentials By Cisco",
+    src: "/pe-1.jpg", // Placeholder image URL
     description: "A React-based Todo List app that allows users to easily add, edit, and delete tasks.",
-    githubLink: "https://github.com/Kudhan/Certifications/blob/main/honour.jpg", // GitHub link for this project
+    githubLink: "https://github.com/Kudhan/Certifications/blob/main/pe-1.jpg", // GitHub link for this project
+  },
+  {
+    title: "AWS Solution Architecture",
+    src: "/aws.jpg", // Placeholder image URL
+    description: "A travel tracker app that helps users track their trips.",
+    githubLink: "https://github.com/Kudhan/Certifications/blob/main/aws.jpg", // GitHub link for this project
   },
   {
     title: "Career Essentials in Gen Ai",
@@ -17,11 +24,24 @@ const projects = [
     githubLink: "https://github.com/Kudhan/Certifications/blob/main/linked1.jpg", // GitHub link for this project
   },
   {
+    title: "Accenture Nordics",
+    src: "/accenture.jpg", // Placeholder image URL
+    description: "A travel tracker app that helps users track their trips.",
+    githubLink: "https://github.com/Kudhan/Certifications/blob/main/accenture.jpg", // GitHub link for this project
+  },
+  {
     title: "Machine Learning in Python",
     src: "/dip.jpg", // Placeholder image URL
     description: "A travel tracker app that helps users track their trips.",
     githubLink: "https://github.com/Kudhan/Certifications/blob/main/dip.jpg", // GitHub link for this project
   },
+  {
+    title: "Honour in Cyber Security",
+    src: "/honour.jpg", // Placeholder image URL
+    description: "A travel tracker app that helps users track their trips.",
+    githubLink: "https://github.com/Kudhan/Certifications/blob/main/dip.jpg", // GitHub link for this project
+  },
+
   // Add more projects as needed
 ];
 

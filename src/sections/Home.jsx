@@ -34,9 +34,12 @@ const Home = () => {
         </p>
       </section>
 
+      <hr className="my-16 h-1 w-3/4 mx-auto border-0 rounded bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-400" />
+
+      
       {/* Skills Section */}
-      <section className="relative mt-24 w-full px-6 sm:px-12 text-white z-10">
-        <h2 className="text-3xl font-semibold text-center mb-8">Technologies I Work With</h2>
+      <section className="relative my-24 w-full px-6 sm:px-12 text-white z-10">
+        <h2 className="text-3xl font-semibold text-center mb-8 text-secondary">Technologies I Work With</h2>
         <p className="max-w-3xl mx-auto text-center text-lg mb-10">
           Here's a glimpse of my tech stack — combining design, logic, and performance to build seamless web experiences.
         </p>
