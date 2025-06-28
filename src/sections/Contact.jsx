@@ -12,8 +12,18 @@ const Contact = () => {
   };
 
   const handleMailClick = () => {
-    window.location.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=kudhanshaik03@gmail.com';
-  };
+  const mailtoURL = 'mailto:kudhanshaik03@gmail.com';
+  const gmailComposeURL = 'https://mail.google.com/mail/?view=cm&fs=1&to=kudhanshaik03@gmail.com';
+
+  // If user is logged into Gmail in browser
+  window.open(gmailComposeURL, '_blank');
+
+  // Fallback in case Gmail doesn't open
+  setTimeout(() => {
+    window.location.href = mailtoURL;
+  }, 1000);
+};
+
 
   const handleLinkedInClick = () => {
     window.location.href = 'https://www.linkedin.com/in/shaik-kudhan-751412281';

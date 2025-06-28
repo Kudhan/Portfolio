@@ -39,7 +39,7 @@ const projects = [
     title: "Honour in Cyber Security",
     src: "/honour.jpg", // Placeholder image URL
     description: "A travel tracker app that helps users track their trips.",
-    githubLink: "https://github.com/Kudhan/Certifications/blob/main/dip.jpg", // GitHub link for this project
+    githubLink: "https://github.com/Kudhan/Certifications/blob/main/honour.jpg", // GitHub link for this project
   },
 
   // Add more projects as needed

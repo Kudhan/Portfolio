@@ -23,7 +23,7 @@ const items = [
     description: "Track expenses & analyze financial trends.",
     image: "https://spreadsheetsph.com/cdn/shop/products/PersonalFinanceTrackerPost.png?v=1706669716",
     icon: <IconSnowflake className="h-4 w-4 text-[#ffd166]" />,
-    gitLink: "https://finance-tracker-ashen-two.vercel.app/signin",
+    gitLink: "https://finance-tracker-ashen-two.vercel.app/",
   },
   {
     title: "Reddit Clone",
