@@ -17,12 +17,13 @@ const Skeleton = () => (
 
 const items = [
   {
-    title: "CollabSphere",
-    description: "Manage teams, tasks & projects in one place.",
-    image: "https://www.constructionplacements.com/wp-content/uploads/2019/03/project-management.jpg.webp",
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
-    gitLink: "https://project-management-eight-puce.vercel.app/sign-in",
+    title: "Nike Landing Page",
+    description: "Responsive Nike brand product showcase.",
+    image: "https://i.pinimg.com/736x/7d/3e/42/7d3e429827adc99ac37ca0bd7fc1653f.jpg",
+    icon: <IconShoe className="h-4 w-4 text-neutral-500" />,
+    gitLink: "https://nike-landing-page1.vercel.app/",
   },
+  
   {
     title: "FinanceGlance",
     description: "Track expenses & analyze financial trends.",
@@ -58,12 +59,13 @@ const items = [
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
     gitLink: "https://github.com/Kudhan/DocSigner",
   },
+  
   {
-    title: "Nike Landing Page",
-    description: "Responsive Nike brand product showcase.",
-    image: "https://i.pinimg.com/736x/7d/3e/42/7d3e429827adc99ac37ca0bd7fc1653f.jpg",
-    icon: <IconShoe className="h-4 w-4 text-neutral-500" />,
-    gitLink: "https://nike-landing-page1.vercel.app/",
+    title: "CollabSphere",
+    description: "Manage teams, tasks & projects in one place.",
+    image: "https://www.constructionplacements.com/wp-content/uploads/2019/03/project-management.jpg.webp",
+    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    gitLink: "https://project-management-eight-puce.vercel.app/sign-in",
   },
 ];
 
