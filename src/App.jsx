@@ -4,6 +4,7 @@ import { Home, About, Project, Contact, Certification} from "./sections";
 import { Dock, DockIcon } from "./components/ui/Dock";
 import {  HomeIcon } from "lucide-react";
 import { Phone, LinkedIn, GitHub, Mail } from "@mui/icons-material";
+import { Experience } from "./sections/experience";
 
 export default function App() {
   const [showDock, setShowDock] = useState(true); // State to control Dock visibility
@@ -57,6 +58,9 @@ export default function App() {
       <section className="xl:padding-l wide:padding-r padding-b" id="home">
         <Home />
       </section>
+      <section>
+        <Experience classname="min-h-screen bg-white dark:bg-b" id="experience"/>
+        </section>
       <section className="padding" id="about">
         <About />
       </section>

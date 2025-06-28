@@ -20,8 +20,8 @@ const skills = [
 const Home = () => {
   return (
     <>
-      {/* Hero / About Me Section */}
-      <section className="relative w-full min-h-screen flex flex-col items-center justify-center px-6 text-center text-white z-10">
+      {/* Hero Section */}
+      <section className="relative w-full min-h-screen pt-28 flex flex-col items-center justify-center px-6 text-center text-white z-10">
         <h1 className="text-4xl sm:text-5xl font-bold text-secondary mb-6">
           Hey, I'm <span className="highlighted-text">Kudhan</span>
         </h1>
@@ -34,14 +34,14 @@ const Home = () => {
         </p>
       </section>
 
-      {/* Skills / Technology Stack Section */}
+      {/* Skills Section */}
       <section className="relative mt-24 w-full px-6 sm:px-12 text-white z-10">
         <h2 className="text-3xl font-semibold text-center mb-8">Technologies I Work With</h2>
         <p className="max-w-3xl mx-auto text-center text-lg mb-10">
           Here's a glimpse of my tech stack — combining design, logic, and performance to build seamless web experiences.
         </p>
 
-        {/* Moving Cards Animation */}
+        {/* Infinite Cards */}
         <div className="mt-4">
           <InfiniteMovingCards items={skills} speed="normal" />
         </div>
