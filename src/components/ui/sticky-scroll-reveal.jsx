@@ -4,78 +4,63 @@ import { useMotionValueEvent, useScroll } from "motion/react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 
-export const StickyScroll = ({
-  content,
-  contentClassName
-}) => {
-  const [activeCard, setActiveCard] = React.useState(0);
+export const StickyScroll = ({ content, contentClassName }) => {
+  const [activeCard, setActiveCard] = useState(0);
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
-    // uncomment line 22 and comment line 23 if you DONT want the overflow container and want to have it change on the entire page scroll
-    // target: ref
     container: ref,
     offset: ["start start", "end start"],
   });
+
   const cardLength = content.length;
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    const cardsBreakpoints = content.map((_, index) => index / cardLength);
-    const closestBreakpointIndex = cardsBreakpoints.reduce((acc, breakpoint, index) => {
-      const distance = Math.abs(latest - breakpoint);
-      if (distance < Math.abs(latest - cardsBreakpoints[acc])) {
-        return index;
-      }
-      return acc;
+    const breakpoints = content.map((_, i) => i / cardLength);
+    const closest = breakpoints.reduce((acc, val, i) => {
+      const dist = Math.abs(latest - val);
+      return dist < Math.abs(latest - breakpoints[acc]) ? i : acc;
     }, 0);
-    setActiveCard(closestBreakpointIndex);
+    setActiveCard(closest);
   });
 
-  const backgroundColors = [
-    "#0f172a", // slate-900
-    "#000000", // black
-    "#171717", // neutral-900
-  ];
-  const linearGradients = [
-    "linear-gradient(to bottom right, #06b6d4, #10b981)", // cyan-500 to emerald-500
-    "linear-gradient(to bottom right, #ec4899, #6366f1)", // pink-500 to indigo-500
-    "linear-gradient(to bottom right, #f97316, #eab308)", // orange-500 to yellow-500
+  const gradients = [
+    "linear-gradient(135deg, #adacb5, #d8d5db)",
+    "linear-gradient(135deg, #d8d5db, #adacb5)",
+    "linear-gradient(135deg, #adacb5, #ffffff)",
   ];
 
-  const [backgroundGradient, setBackgroundGradient] = useState(linearGradients[0]);
+  const [backgroundGradient, setBackgroundGradient] = useState(gradients[0]);
 
   useEffect(() => {
-    setBackgroundGradient(linearGradients[activeCard % linearGradients.length]);
+    setBackgroundGradient(gradients[activeCard % gradients.length]);
   }, [activeCard]);
 
   return (
     <motion.div
       animate={{
-        backgroundColor: backgroundColors[activeCard % backgroundColors.length],
+        backgroundColor: "#2d3142",
       }}
-      className="relative flex h-[25rem] justify-center space-x-10 overflow-y-auto rounded-md p-10"
-      ref={ref}>
-      <div className="div relative flex items-start px-4">
+      className="relative flex h-[25rem] justify-center overflow-y-auto rounded-md p-10 transition-colors duration-700"
+      ref={ref}
+    >
+      <div className="relative flex items-start px-4">
         <div className="max-w-2xl">
           {content.map((item, index) => (
             <div key={item.title + index} className="my-20">
               <motion.h2
-                initial={{
-                  opacity: 0,
-                }}
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-2xl font-bold text-slate-100">
+                className="text-2xl font-bold text-[#ffd166] transition-opacity duration-500"
+              >
                 {item.title}
               </motion.h2>
               <motion.p
-                initial={{
-                  opacity: 0,
-                }}
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-kg mt-10 max-w-sm text-slate-300">
+                className="text-md mt-4 max-w-md text-[#d8d5db] transition-opacity duration-500"
+              >
                 {item.description}
               </motion.p>
             </div>
@@ -83,12 +68,14 @@ export const StickyScroll = ({
           <div className="h-40" />
         </div>
       </div>
+
       <div
         style={{ background: backgroundGradient }}
         className={cn(
-          "sticky top-10 hidden h-40 w-80 overflow-hidden rounded-md bg-white lg:block",
+          "sticky top-10 hidden h-40 w-80 overflow-hidden rounded-lg border-2 border-[#ffd166]/30 shadow-lg lg:block",
           contentClassName
-        )}>
+        )}
+      >
         {content[activeCard].content ?? null}
       </div>
     </motion.div>
