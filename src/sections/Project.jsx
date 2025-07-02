@@ -64,7 +64,7 @@ const items = [
 
 export default function Certification() {
   return (
-    <div className="bg-[#210b2c] mb-10 mt-10">
+    <div className="bg-[#210b2c] mb-10 mt-10 px-20">
       <h1 className="text-4xl text-[#ffd166] font-bold text-center pt-10 mb-10">
         My Projects
       </h1>
