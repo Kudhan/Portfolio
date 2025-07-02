@@ -51,7 +51,7 @@ const items = [
     description: "Add digital signatures to PDFs easily.",
     image: "https://notarypublicunderwriters.com/images/blogs/multiple-document-signers-blog.png",
     icon: <IconSignature className="h-4 w-4 text-[#ffd166]" />,
-    gitLink: "https://github.com/Kudhan/DocSigner",
+    gitLink: "https://doc-signer.vercel.app/",
   },
   {
     title: "CollabSphere",
