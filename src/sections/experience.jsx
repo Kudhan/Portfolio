@@ -4,7 +4,7 @@ import { TimelineGraph } from "@/components/ui/timeline";
 export function Experience() {
   const data = [
     {
-      title: "Labmentix · May 2025 – Present",
+      title: "Labmentix · May 2025 – Sept 2025",
       content: (
         <div>
           <p className="mb-4 text-base md:text-lg text-neutral-800 dark:text-neutral-200 font-medium">
@@ -39,7 +39,7 @@ export function Experience() {
       ),
     },
     {
-      title: "APSSDC · May 2025 – Present",
+      title: "APSSDC · May 2025 – July-2025",
       content: (
         <div>
           <p className="mb-4 text-base md:text-lg text-neutral-800 dark:text-neutral-200 font-medium">
