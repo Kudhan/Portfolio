@@ -22,14 +22,10 @@ export const BentoGridItem = ({
   icon,
   gitLink,
 }) => {
-  const openLinkInNewTab = (url) => {
-    window.open(url, "_blank", "noopener,noreferrer");
-  };
-
   return (
     <div
       className={cn(
-        "rounded-xl group hover:scale-[1.05] transition-transform duration-300 overflow-hidden shadow-md border border-[#ffd166]/20 bg-gradient-to-br from-[#210b2c] via-[#311946] to-[#3b235a] text-white backdrop-blur-md",
+        "w-full rounded-xl group hover:scale-[1.05] transition-transform duration-300 overflow-hidden shadow-md border border-[#ffd166]/20 bg-gradient-to-br from-[#210b2c] via-[#311946] to-[#3b235a] text-white backdrop-blur-md",
         className
       )}
     >
@@ -43,7 +39,7 @@ export const BentoGridItem = ({
         <div className="flex items-center gap-2 text-[#ffd166]">
           <div className="h-5 w-5">{icon}</div>
           <button
-            onClick={() => openLinkInNewTab(gitLink)}
+            onClick={() => window.open(gitLink, "_blank", "noopener,noreferrer")}
             className="text-lg font-semibold hover:underline text-left text-[#03b5aa]"
           >
             {title}
@@ -56,3 +52,4 @@ export const BentoGridItem = ({
     </div>
   );
 };
+
