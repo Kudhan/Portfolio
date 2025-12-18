@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Nav from "./components/Nav";
-import { Home, About, Project, Contact, Certification} from "./sections";
+import { Home, About, Project, Contact, Certification } from "./sections";
 import { Dock, DockIcon } from "./components/ui/Dock";
-import {  HomeIcon } from "lucide-react";
+import { HomeIcon } from "lucide-react";
 import { Phone, LinkedIn, GitHub, Mail } from "@mui/icons-material";
 import { Experience } from "./sections/experience";
 
@@ -59,8 +59,8 @@ export default function App() {
         <Home />
       </section>
       <section>
-        <Experience classname="min-h-screen bg-white dark:bg-b" id="experience"/>
-        </section>
+        <Experience classname="min-h-screen bg-white dark:bg-b" id="experience" />
+      </section>
       <section className="padding" id="about">
         <About />
       </section>
@@ -73,7 +73,7 @@ export default function App() {
       <section className="padding" id="contact">
         <Contact />
       </section>
-      
+
 
       {/* Conditionally render the Dock with smooth transition */}
 

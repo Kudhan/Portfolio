@@ -21,16 +21,16 @@ const items = [
   {
     title: "FinanceGlance",
     description: "Track expenses & analyze financial trends.",
-    image: "https://spreadsheetsph.com/cdn/shop/products/PersonalFinanceTrackerPost.png?v=1706669716",
+    image: "/Finance.png",
     icon: <IconSnowflake className="h-4 w-4 text-[#ffd166]" />,
     gitLink: "https://finance-tracker-ashen-two.vercel.app/",
   },
   {
-    title: "Reddit Clone",
-    description: "A clone with posts, votes, and discussions.",
-    image: "https://play-lh.googleusercontent.com/MDRjKWEIHO9cGiWt-tlvOGpAP3x14_89jwAT-nQTS6Fra-gxfakizwJ3NHBTClNGYK4",
+    title: "Shubkar",
+    description: "Ultimate Event Management Platform",
+    image: "https://img.freepik.com/premium-vector/upcoming-events-text-announcement-banner-graphic_475148-2742.jpg?semt=ais_hybrid&w=740&q=80",
     icon: <IconCompass className="h-4 w-4 text-[#ffd166]" />,
-    gitLink: "https://github.com/Kudhan/reddit_clone",
+    gitLink: "https://github.com/Kudhan/shubkar",
   },
   {
     title: "Melo - Chat App",
@@ -49,16 +49,16 @@ const items = [
   {
     title: "DocSigner",
     description: "Add digital signatures to PDFs easily.",
-    image: "https://notarypublicunderwriters.com/images/blogs/multiple-document-signers-blog.png",
+    image: "https://www.ilovepdf.com/storage/blog/231-1685520545-How-to-sign-a-Google-Doc-using-a-digital-signature.png",
     icon: <IconSignature className="h-4 w-4 text-[#ffd166]" />,
     gitLink: "https://doc-signer.vercel.app/",
   },
   {
     title: "CollabSphere",
     description: "Manage teams, tasks & projects in one place.",
-    image: "https://www.constructionplacements.com/wp-content/uploads/2019/03/project-management.jpg.webp",
+    image: "/CollabSphere.png",
     icon: <IconClipboardCopy className="h-4 w-4 text-[#ffd166]" />,
-    gitLink: "https://project-management-eight-puce.vercel.app/sign-in",
+    gitLink: "https://collabsphere-eight.vercel.app/",
   },
 ];
 
