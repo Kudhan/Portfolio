@@ -1,5 +1,5 @@
 'use client';
-import React from "react";
+
 import './Home.css';
 import InfiniteMovingCards from "@/components/ui/InfiniteMovingCards";
 
@@ -36,7 +36,7 @@ const Home = () => {
 
       <hr className="my-16 h-1 w-3/4 mx-auto border-0 rounded bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-400" />
 
-      
+
       {/* Skills Section */}
       <section className="relative my-24 w-full px-6 sm:px-12 text-white z-10">
         <h2 className="text-3xl font-semibold text-center mb-8 text-secondary">Technologies I Work With</h2>

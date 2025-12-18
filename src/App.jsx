@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Nav from "./components/Nav";
 import { Home, About, Project, Contact, Certification } from "./sections";
 import { Dock, DockIcon } from "./components/ui/Dock";

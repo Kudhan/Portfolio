@@ -1,4 +1,4 @@
-import React from "react";
+
 import { BentoGrid, BentoGridItem } from "../components/ui/BentoGridDemo";
 import {
   IconClipboardCopy,
@@ -62,7 +62,7 @@ const items = [
   },
 ];
 
-export default function Certification() {
+export default function Project() {
   return (
     <div className="bg-[#210b2c] mb-10 mt-10 px-20">
       <h1 className="text-4xl text-[#ffd166] font-bold text-center pt-10 mb-10">

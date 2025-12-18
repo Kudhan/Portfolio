@@ -1,4 +1,4 @@
-import React from "react";
+
 import { StickyScroll } from "../components/ui/sticky-scroll-reveal";
 import './about.css';
 
