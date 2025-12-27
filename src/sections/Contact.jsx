@@ -49,8 +49,7 @@ const Contact = () => {
           className="relative w-40 max-w-xs mx-auto mb-5 mt-5"
           onClick={() => {
             const link = document.createElement('a');
-            link.href = '/resume.pdf';
-            link.download = 'resume.pdf';
+            link.href = "https://drive.google.com/file/d/1QR96mU2OPG3ineF7NfWE7ajUWwTIHYzN/view?usp=sharing";
             link.click();
           }}
         >
