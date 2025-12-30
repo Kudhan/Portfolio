@@ -13,7 +13,7 @@ const Contact = () => {
 
   const handleMailClick = () => {
     const mailtoURL = 'mailto:kudhanshaik03@gmail.com';
-    const gmailComposeURL = 'https://mail.google.com/mail/?view=cm&fs=1&to=kudhanshaik03@gmail.com';
+    const gmailComposeURL = 'https://mail.google.com/mail/?view=cm&fs=1&to=kudhanshaik06@gmail.com';
 
     // If user is logged into Gmail in browser
     window.open(gmailComposeURL, '_blank');
