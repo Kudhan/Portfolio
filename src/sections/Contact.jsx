@@ -13,7 +13,7 @@ const Contact = () => {
 
   const handleMailClick = () => {
     const mailtoURL = 'mailto:kudhanshaik03@gmail.com';
-    const gmailComposeURL = 'https://mail.google.com/mail/?view=cm&fs=1&to=kudhanshaik03@gmail.com';
+    const gmailComposeURL = 'https://mail.google.com/mail/?view=cm&fs=1&to=kudhanshaik06@gmail.com';
 
     // If user is logged into Gmail in browser
     window.open(gmailComposeURL, '_blank');
@@ -49,7 +49,7 @@ const Contact = () => {
           className="relative w-40 max-w-xs mx-auto mb-5 mt-5"
           onClick={() => {
             const link = document.createElement('a');
-            link.href = "https://drive.google.com/file/d/1QR96mU2OPG3ineF7NfWE7ajUWwTIHYzN/view?usp=sharing";
+            link.href = "https://drive.google.com/file/d/1mx3jUt8s9VA4imA0U16YMQLvDbnMU33R/view?usp=sharing";
             link.click();
           }}
         >
