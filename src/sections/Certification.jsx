@@ -18,10 +18,10 @@ const projects = [
     githubLink: "https://github.com/Kudhan/Certifications/blob/main/aws.jpg", // GitHub link for this project
   },
   {
-    title: "Career Essentials in Gen Ai",
-    src: "/linked1.jpg", // Placeholder image URL
+    title: "Gen Ai For Professionals",
+    src: "/udemy-genAi.jpg", // Placeholder image URL
     description: "A weather application built with React.",
-    githubLink: "https://github.com/Kudhan/Certifications/blob/main/linked1.jpg", // GitHub link for this project
+    githubLink: "https://github.com/Kudhan/Certifications/blob/main/udemy-genAi.jpg", // GitHub link for this project
   },
   {
     title: "Ibm Cloud Comouting Fundamentals",
