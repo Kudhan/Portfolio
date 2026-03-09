@@ -33,7 +33,7 @@ const projects = [
     title: "Machine Learning in Python",
     src: "/dip.jpg", // Placeholder image URL
     description: "A travel tracker app that helps users track their trips.",
-    githubLink: "https://github.com/Kudhan/Certifications/blob/main/dip.jpg", // GitHub link for this project
+    githubLink: "https://github.com/Kudhan/Certifications/blob/main/dip.jpg", // GitHub link for this projectgi t
   },
   {
     title: "Honour in Cyber Security",
