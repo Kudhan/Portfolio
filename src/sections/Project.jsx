@@ -30,7 +30,7 @@ const items = [
     description: "Ultimate Event Management Platform",
     image: "https://img.freepik.com/premium-vector/upcoming-events-text-announcement-banner-graphic_475148-2742.jpg?semt=ais_hybrid&w=740&q=80",
     icon: <IconCompass className="h-4 w-4 text-[#ffd166]" />,
-    gitLink: "https://github.com/Kudhan/shubkar",
+    gitLink: "https://shubkar.vercel.app/",
   },
   {
     title: "Melo - Chat App",
