@@ -49,7 +49,7 @@ const Contact = () => {
           className="relative w-40 max-w-xs mx-auto mb-5 mt-5"
           onClick={() => {
             const link = document.createElement('a');
-            link.href = "https://drive.google.com/file/d/1mx3jUt8s9VA4imA0U16YMQLvDbnMU33R/view?usp=sharing";
+            link.href = "https://drive.google.com/file/d/17_Sdtm6yc8l2Oe2R1Xbo8GAKn_3uEOrC/view?usp=sharing";
             link.click();
           }}
         >
