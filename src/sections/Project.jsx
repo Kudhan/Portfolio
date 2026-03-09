@@ -40,11 +40,11 @@ const items = [
     gitLink: "https://chat-app-uf8m.onrender.com/login",
   },
   {
-    title: "Web Traffic Analyzer",
-    description: "Analyze and visualize website visits.",
-    image: "https://www.allaboutai.com/wp-content/uploads/2025/03/AAAI-AI-Keyword-Research-for-Pets-Team-Usage-3-2.webp",
+    title: "Fined Grained PS",
+    description: "Eliminate the Traditional RBAC Model with Fine-Grained Access Control",
+    image: "https://blog.spike.sh/wp-content/uploads/2023/01/ACL-for-Blog-3.png",
     icon: <IconBuildingWarehouse className="h-4 w-4 text-[#ffd166]" />,
-    gitLink: "https://github.com/Kudhan/",
+    gitLink: "https://github.com/Kudhan/fine-grained-permission-system",
   },
   {
     title: "DocSigner",
